@@ -7,13 +7,15 @@ public class a {
 
         for (int k = 0; k < 64; k++) {
 
-            int j = 2;
 
 
-            System.out.println(Math.pow(j, k));
+
+            System.out.println(k+1 + " langelyje yra " + (long)Math.pow(2, k));
         }
 
         System.out.println("i = " + (i + 2));
+        System.out.println((double)(10 / 3));
+
 
     }
 }
