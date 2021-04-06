@@ -1,5 +1,7 @@
 package lt.dmitrij.dienynas;
 
+import java.util.Arrays;
+
 public class main {
     public static void main(String[] args) {
         class mokinys {
@@ -59,13 +61,11 @@ public class main {
 
 
                 }
-
             }
-
         }
         for (int i = 0; i < mokiniai.length; i++) {
-
             System.out.println(mokiniai[i].vardas + " " + mokiniai[i].pavarde + " klase : " + mokiniai[i].klase);
+
         }
     }
 

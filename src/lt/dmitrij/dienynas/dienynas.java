@@ -1,3 +1,0 @@
-package lt.dmitrij.dienynas;
-
-
