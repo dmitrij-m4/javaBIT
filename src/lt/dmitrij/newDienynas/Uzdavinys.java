@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class Uzdavinys {
     public static void main(String[] args) {
         Mokinys[] mokiniai = {
-                new Mokinys("Jonas", "Jonaitis", 15, new int[]{5, 9, 8}),
+                new Mokinys("Jonas", "Jonaitis", 10, new int[]{5, 9, 8}),
                 new Mokinys("Petras", "Petraitis", 2, new int[]{2, 9, 10}),
                 new Mokinys("Antanas", "Antanauskas", 1, new int[]{1, 9, 3}),
                 new Mokinys("Stasys", "Stasaitis", 8, new int[]{1, 9, 10}),
