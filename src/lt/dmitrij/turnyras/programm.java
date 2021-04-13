@@ -12,6 +12,7 @@ public class programm {
                 new Mokinys ("Ilona"),
                 new Mokinys ("Juozas"),
                 new Mokinys ("Marius"),
+//                new Mokinys ("Mantas"),
 
         };
         System.out.println(Arrays.toString(mokinys));
@@ -21,7 +22,7 @@ public class programm {
         System.out.println("***");
         firstRound("1 ratas - 1/4", mokinys);
         System.out.println("***");
-        print("Galutinis sarašas: ", mokinys);
+//        print("Galutinis sarašas: ", mokinys);
     }
 
 
@@ -32,41 +33,51 @@ public class programm {
             System.out.println("Vardas : " + mokinys.getVardas());
         }
     }
-    static String firstRound (String title, Mokinys[] m1 ){
+    static void firstRound (String title, Mokinys[] m1 ){
         System.out.println(title);
+        for (int i = 0; i <= m1.length; i = i + 2 ){
 
 
+            if ((i + 1) == (m1.length)){
+                System.out.println("Pusfinaliai: ");
+                System.out.println((i - 2) + " ) " + (i - 5)  + " poros nugalėtojas    -    "+ m1[m1.length - 1].getVardas());
+                System.out.println((i - 1) + " ) " + (i - 4) + " poros nugalėtojas    -    " + (i - 3) + " poros nugalėtojas");
+                System.out.println("Finalas: ");
+                System.out.println( (i - 2) +  " poros nugalėtojas    -    " + (i - 1) +" poros nugalėtojas ");
+                return;
 
-        for (int i = 0; i < m1.length; i++) {
-            for (int j = 0; j < m1.length; j++) {
-                if (m1[i].getVardas().equals(m1[j].getVardas())) {
-                   String vardas = m1[i].getVardas();
+            }
 
-                   String vardas2 = m1[j].getVardas();
-
-
-
-                    System.out.println(j + " " + vardas + " - " + vardas2);
-                }
-
-
-
-//        Arrays.sort(m1, programm::compare);
-////            }
-//        System.out.println(Mokinys[].classgetVardas() + " " + m1[].getVardas());
-//            System.out.println("1) " + pirmasRaundas.getVardas() + " - " + pirmasRaundas.getVardas());
+            if ((m1.length ) == i){
+                System.out.println("yes");
+                System.out.println("Pusfinaliai: ");
+                System.out.println((i - 3) + " ) " + (i - 7)  + " poros nugalėtojas    -   " + (i - 4) + " poros nugalėtojas");
+                System.out.println((i - 2) + " ) " + (i - 6) + " poros nugalėtojas    -    " + (i - 5) + " poros nugalėtojas");
+                System.out.println("Finalas: ");
+                System.out.println( (i - 3) +  " poros nugalėtojas    -    " + (i - 2) +" poros nugalėtojas ");
+                return;
             }
 
 
-//    private static int compare(Mokinys a, Mokinys b) {
-//        if (a.getVardas().equals(b.getVardas())) return 0;
-//        if (a.getVardas().compareToIgnoreCase(b.getVardas()) > 0 ) return 1;
-//        if (a.getVardas().compareToIgnoreCase(b.getVardas()) < 0 ) return -1;
-//        return 0;
-//
-//    }
+            System.out.println( ((i + 2) / 2 ) + " ) " + m1[i].getVardas() + " - " + m1[i + 1].getVardas());
+
         }
-        return title;
-    }}
+
+    }
+    static void vardas2 (String title, Mokinys[] m1 ){
+        System.out.println(title);
+        for (int i = 1; i < m1.length; i = i + 2 ){
+            System.out.println((m1[m1.length].getVardas()));
+        }
+    }
+
+
+
+}
+
+
+
+
+
 
 
